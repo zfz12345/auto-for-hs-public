@@ -1,6 +1,7 @@
 # auto-for-hs-public
 auto for hs public.
 
+> 图片详见 PDF版
 
 ---
 ### 相关附件
@@ -26,16 +27,16 @@ auto for hs public.
 ### 相关设置
 1.	autoforhbform.exe 界面设置.
 
- 
-从上到下分别为: 战网路径地址/RunAsDate地址/HearthBuddy地址
-其次为 炉石战网启动延迟时间/炉石启动等待时间/兄弟启动等待时间.（以上3个参数根据自己的电脑响应速度决定.）
+从上到下分别为: 战网路径地址/RunAsDate地址/HearthBuddy地址. 其次为 炉石战网启动延迟时间/炉石启动等待时间/兄弟启动等待时间.（以上3个参数根据自己的电脑响应速度决定.）
  
 2.	autoforhbform.exe – 加密工具
- 
-用于加密用户相关信息. 之后有用.
+
+ 用于加密用户相关信息. 之后有用.
 
 3.	autoforhb-users.cfg 用户信息配置.(暂无界面配置)
-0|hello3|uij2118033jij@163.com|EAAAAHd6DoBRyjl8pG4UfOsBm5gtoZcfmiz7gwjI9fRiZWpR|00:01-20:00|false
+
+`0|hello3|uij2118033jij@163.com|EAAAAHd6DoBRyjl8pG4UfOsBm5gtoZcfmiz7gwjI9fRiZWpR|00:01-20:00|false`
+
 从左到右依次为:
 *	ID (第二个用户从1开始)
 *	用户别名-打Log时, 便于识别.
@@ -43,9 +44,9 @@ auto for hs public.
 *	密码(使用上方加密工具加密)
 *	运行时间 (多时间段 使用”;”分隔)(时间必须为00:00-23:59内数值) (特别注意 24:00 会造成转换错误, 请使用”00:00”进行替换)
 *	是否赢得30胜结束.(注意 请使用兄弟原生插件 原理是读取Settings\Default\ Stats.json 内的数字进行判断胜场数目的. 如果不需要可以直接赋值为false.)
+
 4.	RunAsDate相关设置
 
- 
 *	炉石兄弟运行地址.
 *	时间.（有程序通过加壳导致 需要更改时间.）(0516可以设置时间0518解决)
 *	--autostart --config:Default 兄弟开启后直接启动.
@@ -53,23 +54,28 @@ auto for hs public.
 5.	战网设置
  
 请不要勾选保持登录状态. 并且地址选择为中国地区.
+
 6.	炉石相关
+
 炉石请不要选择全屏状态. 尽量选择窗口模式.
+
 7.	炉石兄弟相关
+
 炉石兄弟. 请提前选择好相对应的模式和卡组.
-
-
 
 ---------
 ### Q&A
 
 1.	如果发生报错怎么办?
+
 建议提交到Github的Issue.
 
 2.	更换地址后报错.
+
 建议检查autoforhub.cfg文件. 查看是否有多余的字符串. 已知BUG.
 
 3.	我使用远程服务器模式. 无法自动登录账户怎么办.
+
 建议使用脚本.` EnableCloseRDP.bat`
 
 ```
