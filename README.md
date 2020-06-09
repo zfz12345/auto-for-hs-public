@@ -1,4 +1,7 @@
 # auto-for-hs-public
+
+> Latest Version: 0.2 / Date 20200609
+
 auto for hs public.
 
 > 图片详见 PDF版
@@ -29,6 +32,8 @@ auto for hs public.
 
 * 从上到下分别为: 战网路径地址/RunAsDate地址/HearthBuddy地址. 
 * 其次为 炉石战网启动延迟时间/炉石启动等待时间/兄弟启动等待时间.（以上3个参数根据自己的电脑响应速度决定.）
+* 单用户模式/多用户模式
+* 直接启动/RunAsDate启动
 
 2.	autoforhbform.exe – 加密工具
 
@@ -36,7 +41,7 @@ auto for hs public.
 
 3.	autoforhb-users.cfg 用户信息配置.(暂无界面配置)
 
-`0|hello3|uij2118033jij@163.com|EAAAAHd6DoBRyjl8pG4UfOsBm5gtoZcfmiz7gwjI9fRiZWpR|00:01-20:00|false`
+`0|hello3|hello3@163.com|EAAAAHd6DoBRyjl8pG4UfOsBm5gtoZcfmiz7gwjI9fRiZWpR|00:01-20:00|false`
 
 从左到右依次为:
 *	ID (第二个用户从1开始)
@@ -52,9 +57,12 @@ auto for hs public.
 *	时间.（有程序通过加壳导致 需要更改时间.）(0516可以设置时间0518解决)
 *	--autostart --config:Default 兄弟开启后直接启动.
  
-5.	战网设置
+5.	战网设置(单用户/多用户模式)
  
-请不要勾选保持登录状态. 并且地址选择为中国地区.
+* 单用户模式: 保证战网打开后, 可以直接启动即可.
+* 多用户模式: 请不要勾选保持登录状态. 并且地址选择为中国地区. 且默认登录时, 光标处于第二行.（缓存一个用户）
+* 不论单用户模式还是多用户模式. 都要配置`autoforhb-users.cfg`文件. 单用户时, 其账户信息可以随便修改.(因为不需要模拟登陆)
+
 
 6.	炉石相关
 
